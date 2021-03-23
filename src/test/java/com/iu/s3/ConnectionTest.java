@@ -12,13 +12,14 @@ public class ConnectionTest extends MyAbstractTest {
 	
 	@Autowired
 	private DataSource dataSource;
+	
 	@Autowired
 	private SqlSession sqlSession;
 	
 	@Test
-	public void connectionTest() throws Exception{
+	public void connectionTest() throws Exception {
 		assertNotNull(sqlSession);
 	}
-
+	
 
 }
